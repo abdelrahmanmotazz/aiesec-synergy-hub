@@ -6,7 +6,6 @@ import { SmartRoutingSimulator } from './components/SmartRoutingSimulator';
 import { PersonaMatrix } from './components/PersonaMatrix';
 import { SLATrackerCRM } from './components/SLATrackerCRM';
 import { JointCadenceHub } from './components/JointCadenceHub';
-import { ActivationPlaybook } from './components/ActivationPlaybook';
 import { ExecutiveDashboard } from './components/ExecutiveDashboard';
 import { VercelDeployModal } from './components/VercelDeployModal';
 import { mockLeads } from './data/synergyData';
@@ -92,48 +91,11 @@ export function App() {
           <JointCadenceHub />
         )}
 
-        {activeTab === 'activations' && (
-          <ActivationPlaybook />
-        )}
-
         {activeTab === 'analytics' && (
           <ExecutiveDashboard />
         )}
 
       </main>
-
-      {/* Footer */}
-      <footer className="border-t border-white/10 bg-slate-950/70 backdrop-blur-md py-8 px-4 sm:px-6 lg:px-8 z-10 text-xs text-slate-400">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="flex items-center space-x-3">
-            <div className={`w-8 h-8 rounded-lg ${currentTheme.primaryBg} flex items-center justify-center text-white font-bold text-sm`}>
-              A
-            </div>
-            <div>
-              <div className="text-white font-bold flex items-center gap-1.5">
-                <span>{lcName}</span>
-                <span className="text-slate-500">&bull;</span>
-                <span className="text-slate-300 font-normal">{term} Executive Term</span>
-              </div>
-              <div className="text-[11px] text-slate-400">
-                Peace and fulfillment of humankind's potential.
-              </div>
-            </div>
-          </div>
-
-          <div className="flex flex-wrap items-center gap-4 text-xs">
-            <button 
-              onClick={() => setIsDeployModalOpen(true)}
-              className="hover:text-white flex items-center space-x-1 text-blue-400 font-semibold"
-            >
-              <Github className="w-3.5 h-3.5" />
-              <span>GitHub / Vercel Status</span>
-            </button>
-            <span className="text-slate-600">&bull;</span>
-            <span className="text-slate-400">oGV &times; oGT &times; B2C Unified Synergy Platform</span>
-          </div>
-        </div>
-      </footer>
 
       {/* Vercel Deploy Modal */}
       <VercelDeployModal

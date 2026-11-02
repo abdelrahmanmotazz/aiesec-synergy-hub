@@ -37,7 +37,6 @@ export const Header = ({ activeTab, setActiveTab, onOpenDeployModal }) => {
     { id: 'persona', label: 'Persona & Objection Matrix', icon: Users, badge: 'Guide' },
     { id: 'crm', label: 'Cross-Funnel SLA & CRM', icon: Clock, badge: 'Live Leads' },
     { id: 'cadence', label: 'Joint Cadence & Sprints', icon: Calendar, badge: 'Cadence' },
-    { id: 'activations', label: 'Activation Playbook', icon: Target, badge: 'Booths & Ads' },
     { id: 'analytics', label: 'Executive Analytics', icon: TrendingUp, badge: 'Forecast' },
   ];
 
