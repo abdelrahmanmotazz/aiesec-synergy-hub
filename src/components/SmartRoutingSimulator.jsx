@@ -202,13 +202,13 @@ ${lcName}`;
   };
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-5">
       {/* Title Card */}
-      <div className="glass-panel rounded-2xl p-6 border border-white/10">
-        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+      <div className="glass-panel rounded-2xl p-4 sm:p-5 border border-white/10">
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-3">
           <div>
-            <div className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20 text-xs font-semibold uppercase tracking-wider mb-2">
-              <Compass className="w-3.5 h-3.5" />
+            <div className="inline-flex items-center space-x-1.5 px-2.5 py-0.5 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20 text-[11px] font-semibold uppercase tracking-wider mb-1.5">
+              <Compass className="w-3 h-3" />
               <span>Intelligent Lead Routing Engine</span>
             </div>
             <h2 className="text-xl sm:text-2xl font-heading font-black text-white">

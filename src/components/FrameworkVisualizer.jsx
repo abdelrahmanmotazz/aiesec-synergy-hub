@@ -42,33 +42,33 @@ export const FrameworkVisualizer = ({ onSelectRouting }) => {
   };
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-5">
       {/* Hero Header */}
-      <div className="relative overflow-hidden rounded-2xl glass-panel p-6 sm:p-8 border border-white/10">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-blue-600/10 via-purple-600/10 to-transparent rounded-full blur-3xl -z-10 pointer-events-none" />
+      <div className="relative overflow-hidden rounded-2xl glass-panel p-4 sm:p-5 border border-white/10">
+        <div className="absolute top-0 right-0 w-80 h-80 bg-gradient-to-bl from-blue-600/10 via-purple-600/10 to-transparent rounded-full blur-3xl -z-10 pointer-events-none" />
         
-        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-3">
           <div>
-            <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-semibold uppercase tracking-wider mb-3">
-              <Zap className="w-3.5 h-3.5" />
+            <div className="inline-flex items-center space-x-1.5 px-2.5 py-0.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-[11px] font-semibold uppercase tracking-wider mb-1.5">
+              <Zap className="w-3 h-3" />
               <span>Unified Operational Ecosystem</span>
             </div>
-            <h2 className="text-2xl sm:text-3xl font-heading font-black text-white tracking-tight">
+            <h2 className="text-xl sm:text-2xl font-heading font-black text-white tracking-tight">
               Strategic Synergy Framework
             </h2>
-            <p className="mt-2 text-sm text-slate-300 max-w-3xl leading-relaxed">
+            <p className="mt-1 text-xs sm:text-sm text-slate-300 max-w-3xl leading-relaxed">
               Eliminating functional silos between B2C Marketing and Outgoing Exchange (oGV & oGT). 
               A seamless engine aligning persona routing, bi-directional cross-funnel transfers, and closed-loop alumni Customer Lifetime Value (CLV).
             </p>
           </div>
 
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 flex-shrink-0">
             <button
               onClick={() => onSelectRouting && onSelectRouting()}
-              className="px-4 py-2.5 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-semibold text-xs shadow-lg shadow-blue-500/25 flex items-center space-x-2 transition"
+              className="px-3.5 py-2 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-semibold text-xs shadow-md shadow-blue-500/25 flex items-center space-x-1.5 transition"
             >
-              <Zap className="w-4 h-4 text-amber-300" />
-              <span>Launch Router Simulator</span>
+              <Zap className="w-3.5 h-3.5 text-amber-300" />
+              <span>Router Simulator</span>
             </button>
           </div>
         </div>
